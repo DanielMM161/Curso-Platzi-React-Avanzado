@@ -25,6 +25,6 @@ const slideInKeyFrames = keyframes`
         transform: translate3d(0, 0, 0) scale(.5);
     }
 `
-export const slideIn({time = '1s', type = 'ease'}) => (
+export const slideIn = ({time = '1s', type = 'ease'} = {}) => 
     css`animation: ${time} ${slideInKeyFrames} ${type} forwards;`
-)
+
