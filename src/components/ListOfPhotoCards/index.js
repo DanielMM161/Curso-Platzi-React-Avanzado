@@ -1,5 +1,5 @@
 import React from 'react';
-import { PhotoCard } from '../PhotoCard';
+import { PhotoCard } from '../PhotoCard'
 import {useGetPhotos} from '../../hooks/getPhotos'
 
 
