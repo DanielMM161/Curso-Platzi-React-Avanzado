@@ -1,5 +1,5 @@
 import React from 'react'
-import {gql, useQuery, useMutation} from '@apollo/client'
+import {gql} from '@apollo/client'
 import {Mutation} from '@apollo/client/react/components'
 
 const LIKE_PHOTO = gql`
