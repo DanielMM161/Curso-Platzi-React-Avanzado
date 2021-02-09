@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import { ApolloClient, ApolloProvider, InMemoryCache} from '@apollo/client'
+import Context from './Context'
 
 import {App} from './App'
 
@@ -11,7 +12,9 @@ const client = new ApolloClient({
 
 
 ReactDom.render(
-  <ApolloProvider client={client}>
-    <App />
-  </ApolloProvider>,
+  <Context.Provider >
+    <ApolloProvider client={client}>
+      <App />
+    </ApolloProvider>
+  </Context.Provider>,
   document.getElementById('app'))
