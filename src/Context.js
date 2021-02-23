@@ -4,6 +4,7 @@ export const Context = createContext()
 
 const Provider = ({children}) => {
   const [isAuth, setIsAuth] = useState(() => {
+    console.log('IS AUTH', window.sessionStorage.getItem('token'));
     return window.sessionStorage.getItem('token')
   })
 
